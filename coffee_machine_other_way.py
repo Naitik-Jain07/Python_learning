@@ -1,5 +1,4 @@
 # 1. take input about coffee
-
 def welcome():
     global response
     response = str(input("What would you like? (espresso/latte/cappuccino): ")).lower()
@@ -8,7 +7,7 @@ def welcome():
 working = True
 Milk = 200
 Water = 300
-Coffee = 100  # ✅ fixed from -100
+Coffee = 100
 Money = 0
 
 def report():
@@ -29,19 +28,15 @@ def coins_calcu():
     z = int(input("Enter number of nickels: "))
     w = int(input("Enter number of pennies: "))
     total = (x * 0.25) + (y * 0.10) + (z * 0.05) + (w * 0.01)
-    return total  # ✅ returning instead of using global
-
+    return total
 
 while working:
     welcome()
-
     if response == "report":
         report()
-
     elif response == "off":
         print("Shutting down. Goodbye!")
         working = False
-
     elif response == "espresso":
         if Water < 50:
             print("Sorry, not enough water.")
@@ -65,7 +60,6 @@ while working:
                 Money += 1.5
                 print("Here is your espresso ☕ Enjoy!")
             wanna_continue()
-
     elif response == "latte":
         if Water < 200:
             print("Sorry, not enough water.")
@@ -93,7 +87,6 @@ while working:
                 Money += 2.5
                 print("Here is your latte ☕ Enjoy!")
             wanna_continue()
-
     elif response == "cappuccino":
         if Water < 250:
             print("Sorry, not enough water.")
@@ -121,6 +114,5 @@ while working:
                 Money += 3.0
                 print("Here is your cappuccino ☕ Enjoy!")
             wanna_continue()
-
     else:
-        print("Invalid choice! Please choose espresso, latte, or cappuccino.")  # ✅ handles bad input
+        print("Invalid choice! Please choose espresso, latte, or cappuccino.")
