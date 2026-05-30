@@ -1,10 +1,10 @@
 # Coffee Machine Project
 
-Version 2 :
+Version 1 other way one :
 - Initial implementation
 - Direct conditional checks
 
-Version 1 :
+Version 2 full one :
 - Improved code structure
 - Better function organization
 - Cleaner logic
