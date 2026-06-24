@@ -15,6 +15,7 @@
 # import heroes
 # import random
 
+# DRAWING SHAPES OF DIFF COLOURS
 import turtle as t
 import random
 tin = t.Turtle()
